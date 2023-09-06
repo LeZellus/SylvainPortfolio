@@ -3,3 +3,53 @@
 @tailwind utilities;
 
 @import "components/index";
+
+body {
+  font-family: "Lexend", sans-serif;
+  background-image: radial-gradient(#B5FF3D 2px, #F3F4F6 0);
+  background-size: 80px 80px;
+  @apply overflow-x-hidden bg-gray-100 bg-center bg-fixed;
+}
+
+.section {
+  @apply min-h-screen;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center tracking-wide transition duration-300 h-12 rounded-full font-semibold uppercase;
+
+  &-primary {
+    @apply text-gray-800 bg-primary-600 hover:bg-gray-800 hover:text-primary-600 focus:ring-4 focus:ring-primary-300 text-sm px-6 py-2.5 text-center;
+  }
+}
+
+h2 {
+  @apply text-4xl font-bold text-gray-700;
+}
+
+h3 {
+  @apply text-3xl font-semibold;
+}
+
+h4 {
+  @apply text-2xl font-medium;
+}
+
+h5 {
+  @apply text-xl font-medium;
+}
+
+
+
+/* styles.css */
+.image-animation {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.image-animation.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s; /* Delay for a staggered effect */
+}

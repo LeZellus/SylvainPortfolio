@@ -10,10 +10,20 @@
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
+            {{ encore_entry_script_tags('smooth') }}
         {% endblock %}
     </head>
     <body>
-    {%  include("includes/_nav.html.twig") %}
-        {% block body %}{% endblock %}
+        {%  include("includes/_nav.html.twig") %}
+
+        <main class="mb-20 md:ml-20 px-8 w-[calc(100%-5rem)">
+            {% block body %}
+
+            {% endblock %}
+
+            {% block footer_content %}
+                {% include('includes/_footer.html.twig') %}
+            {% endblock %}
+        </main>
     </body>
 </html>

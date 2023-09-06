@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil | {{ parent() }}{% endblock %}
+
+{% block body %}
+    <!-- Hero Section -->
+    <section id="hero" class="section py-16 flex items-center justify-center">
+        <div class="grid gap-4 text-center">
+            <p class="text-lg text-gray-800">Salut 👋, je suis</p>
+            <h1 id="title" class="text-5xl md:text-8xl font-extrabold text-gray-800">Sylvain<span class="text-primary-600">B.</span></h1>
+            <p class="text-xl md:text-3xl text-gray-800">Infographiste, artiste 3D</p>
+            <div class="flex justify-center mt-8">
+                <a href="#biographie" class="btn btn-primary smooth">C'est parti !</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Présentation Biographique Section -->
+    <section id="biographie" class="section flex items-center justify-center py-16">
+        <div class="grid gap-4 mx-auto text-center">
+            <h2>Présentation Biographique</h2>
+            <p>Jeune infographiste, créatif et passionné.</p>
+            <p>Je suis un indépendant issu d'écoles supérieures dans l'infographie 2D et 3D.</p>
+            <p>Je vous présente mes dernières réalisations.</p>
+            <p>Bienvenu et n'hésitez pas à laisser un avis.</p>
+        </div>
+    </section>
+
+    <!-- Dessins Section -->
+    <section id="dessins" class="section py-16">
+        <div class="grid gap-8 mx-auto text-center">
+            <h2>Dessins</h2>
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 image-container">
+                <!-- Vous pouvez remplacer les liens des images ci-dessous -->
+                <div class="overflow-hidden rounded-lg image-animation">
+                    <img src="https://images.unsplash.com/photo-1584804738473-a49b7441c464?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Dessin 1" class="w-full h-auto">
+                </div>
+                <div class="overflow-hidden rounded-lg image-animation">
+                    <img src="https://images.unsplash.com/photo-1584804738473-a49b7441c464?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Dessin 2" class="w-full h-auto">
+                </div>
+                <div class="overflow-hidden rounded-lg image-animation">
+                    <img src="https://images.unsplash.com/photo-1584804738473-a49b7441c464?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Dessin 3" class="w-full h-auto">
+                </div>
+                <div class="overflow-hidden rounded-lg image-animation">
+                    <img src="https://images.unsplash.com/photo-1584804738473-a49b7441c464?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Dessin 4" class="w-full h-auto">
+                </div>
+                <div class="overflow-hidden rounded-lg image-animation">
+                    <img src="https://images.unsplash.com/photo-1584804738473-a49b7441c464?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Dessin 5" class="w-full h-auto">
+                </div>
+                <div class="overflow-hidden rounded-lg image-animation">
+                    <img src="https://images.unsplash.com/photo-1584804738473-a49b7441c464?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Dessin 6" class="w-full h-auto">
+                </div>
+                <div class="overflow-hidden rounded-lg image-animation">
+                    <img src="https://images.unsplash.com/photo-1584804738473-a49b7441c464?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Dessin 6" class="w-full h-auto">
+                </div>
+                <div class="overflow-hidden rounded-lg image-animation">
+                    <img src="https://images.unsplash.com/photo-1584804738473-a49b7441c464?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Dessin 6" class="w-full h-auto">
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <a href="#" class="btn btn-primary">Voir tout mes projets</a>
+            </div>
+        </div>
+    </section>
+
+    
+{% endblock %}

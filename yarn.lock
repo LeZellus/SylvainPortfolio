@@ -1039,6 +1039,11 @@
     error-stack-parser "^2.0.0"
     string-width "^4.2.3"
 
+"@phosphor-icons/web@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@phosphor-icons/web/-/web-2.0.3.tgz#69ae977b92d7c330521ddb5bc3a18fd8cbb4d4eb"
+  integrity sha512-9oYmohi2fo87w3DbtfjBoJxrklVojgXq2wuGcqxKccj2TxMq7UIusKDrGUZYOQHM9pUKkh+kvfmutETMGDR6gg==
+
 "@sinclair/typebox@^0.27.8":
   version "0.27.8"
   resolved "https://registry.npmjs.org/@sinclair/typebox/-/typebox-0.27.8.tgz"
