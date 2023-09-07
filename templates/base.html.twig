@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Sylvain B. | Infographiste, Artiste 3D{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <link rel="icon" href="{{ asset('build/images/logo.svg') }}">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -14,16 +14,18 @@
         {% endblock %}
     </head>
     <body>
-        {%  include("includes/_nav.html.twig") %}
+        {% if app.request.attributes.get('_route') != 'app_draw' %}
+            {%  include("includes/_nav.html.twig") %}
+        {% endif %}
 
-        <main class="mb-20 md:mb-0 md:ml-20 px-8 w-[calc(100%-5rem)">
+        <main class="mb-20 md:mb-0 md:ml-20 px-8 w-[calc(100%-5rem) {% block main_class %}{% endblock %}">
             {% block body %}
 
             {% endblock %}
 
-            {% block footer_content %}
+            {% if app.request.attributes.get('_route') != 'app_draw' %}
                 {% include('includes/_footer.html.twig') %}
-            {% endblock %}
+            {% endif %}
         </main>
     </body>
 </html>

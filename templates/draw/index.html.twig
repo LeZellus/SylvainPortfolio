@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes projets{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('tabs') }}
+{% endblock %}
+
+ {% block main_class %}p-8 lg:mr-20{% endblock %}
+
+{% block body %}
+    <section class="grid gap-8 justify-center">
+        <a href="{{ path('app_home') }}" class="m-auto">
+            <img class="w-20" src="{{ asset('uploads/logo.svg') }}" alt="">
+        </a>
+        <h2 class="text-center">Mes projets</h2>
+        {% include("includes/_tabs.html.twig") %}
+    </section>
+
+    {% block footer %}
+    {% endblock %}
+
+{% endblock %}
