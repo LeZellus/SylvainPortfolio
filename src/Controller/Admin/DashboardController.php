@@ -39,12 +39,15 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->setTitle('Sylvain Portfolio');
+            ->setTitle('Sylvain B.')
+            ->setFaviconPath('uploads/logo.svg');
+
     }
 
     public function configureMenuItems(): iterable
     {
-        yield MenuItem::linkToDashboard('Dashboard', 'ph ph-home');
-        yield MenuItem::linkToCrud('The Label', 'ph ph-image', Image::class);
+        yield MenuItem::linkToRoute('Accueil', 'fas fa-home', 'app_home');
+        yield MenuItem::section('Images');
+        yield MenuItem::linkToCrud('Images', 'fa fa-image', Image::class);
     }
 }

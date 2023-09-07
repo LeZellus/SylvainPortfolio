@@ -88,7 +88,7 @@ class Image
     }
 
     #[ORM\PreUpdate]
-    public function setUpdatedAtValue()
+    public function setUpdatedAtValue(): void
     {
         $this->updatedAt = new \DateTimeImmutable();
     }
