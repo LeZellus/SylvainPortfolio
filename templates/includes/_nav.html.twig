@@ -17,7 +17,13 @@
             <i class="ph ph-image"></i>
         </a>
     </div>
-    <p class="h-16 hidden md:block">
-        TEST
-    </p>
+    {% if app.user %}
+        <a href="{{ path("app_logout") }}" class="h-16 hidden md:block text-3xl">
+            <i class="ph ph-sign-out"></i>
+        </a>
+    {% else %}
+        <a href="{{ path("app_login") }}" class="h-16 hidden md:block text-3xl">
+            <i class="ph ph-sign-in"></i>
+        </a>
+    {% endif %}
 </nav>

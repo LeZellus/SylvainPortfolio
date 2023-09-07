@@ -39,6 +39,10 @@ h5 {
   @apply text-xl font-medium;
 }
 
+.page-link {
+  @apply font-bold hover:text-primary-600 transition duration-300;
+}
+
 
 
 /* styles.css */

@@ -1,0 +1,28 @@
+.form {
+
+  //Form Submit
+  &-input {
+    @apply bg-white border border-gray-200 rounded-lg block w-full p-2.5;
+
+    &:focus {
+      @apply ring-primary-600 border-primary-600 dark:ring-blue-500;
+    }
+  }
+
+  //Form Submit
+  &-submit {
+    @apply btn btn-primary mt-8;
+
+    &:focus {
+      @apply ring-4 outline-none ring-primary-300;
+    }
+
+    &:hover {
+      @apply transition duration-300 bg-primary-700;
+    }
+  }
+
+  &-label {
+    @apply block mb-2 text-sm font-medium;
+  }
+}

@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Sylvain B. | Infographiste, Artiste 3D{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -14,15 +15,10 @@
         {% endblock %}
     </head>
     <body>
-        {%  include("includes/_nav.html.twig") %}
 
-        <main class="mb-20 md:mb-0 md:ml-20 px-8 w-[calc(100%-5rem)">
+        <main class="min-h-screen flex justify-center items-center p-8">
             {% block body %}
 
-            {% endblock %}
-
-            {% block footer_content %}
-                {% include('includes/_footer.html.twig') %}
             {% endblock %}
         </main>
     </body>
